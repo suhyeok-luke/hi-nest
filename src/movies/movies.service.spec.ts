@@ -25,7 +25,7 @@ describe('MoviesService', () => {
     });
   });
 
-  describe('getOne', () => {
+  /*describe('getOne', () => {
     
     it('should return a movie', () => {
       service.create({
@@ -109,5 +109,5 @@ describe('MoviesService', () => {
         expect(e).toBeInstanceOf(NotFoundException);
       };
     });
-  });
+  });*/
 });

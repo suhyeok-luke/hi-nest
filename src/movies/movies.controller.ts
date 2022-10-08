@@ -14,7 +14,7 @@ export class MoviesController {
         return this.moviesService.getAll();
     }
 
-    @Get('search')
+    /*@Get('search')
     search(@Query("year") searchingYear: string){
         return `We are searching for a movie made after: ${searchingYear}`
     }
@@ -38,7 +38,7 @@ export class MoviesController {
     @Patch(':id')
     patch(@Param('id') movieId: number, @Body() updateData: UpdateMovieDTO){
         return this.moviesService.update(movieId, updateData);
-    }
+    }*/
 
     
 }

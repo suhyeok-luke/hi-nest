@@ -13,7 +13,10 @@ import {
 @ObjectType()
 export class Movie {
   @PrimaryGeneratedColumn()
-  @Field(() => Int)
+  @Field()
+  _id : string;
+
+  @Field()
   id: number;
 
   @Column()

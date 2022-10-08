@@ -1,8 +1,9 @@
 type Movie {
+    _id : String
     id : Number
     title: String
     year: Number
-    genres: String[]
+    genres: [String]
 }
 
 type Query {
