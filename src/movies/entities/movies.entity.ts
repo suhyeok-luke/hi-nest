@@ -14,9 +14,6 @@ import {
 export class Movie {
   @PrimaryGeneratedColumn()
   @Field()
-  _id : string;
-
-  @Field()
   id: number;
 
   @Column()

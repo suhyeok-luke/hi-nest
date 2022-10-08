@@ -12,9 +12,6 @@ export const MoviesSchema = new mongoose.Schema({
 @ObjectType()
 export class Movie extends Document {
     @Field()
-    _id : string;
-
-    @Field()
     id: number;
 
     @Field()

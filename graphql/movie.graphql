@@ -1,5 +1,4 @@
 type Movie {
-    _id : String
     id : Number
     title: String
     year: Number
