@@ -9,7 +9,6 @@ export const MoviesSchema = new mongoose.Schema({
     genres: [String],
 });
 
-@ObjectType()
 export class Movie extends Document {
     @Field()
     id: number;

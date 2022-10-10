@@ -1,7 +1,7 @@
 type Movie {
-    id : Number
+    id : Int
     title: String
-    year: Number
+    year: Int
     genres: [String]
 }
 

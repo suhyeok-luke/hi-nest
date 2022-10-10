@@ -9,10 +9,10 @@ export class MoviesController {
 
     constructor(private readonly moviesService: MoviesService) {}
     
-    @Get()
-    getAll() : Movie[] {
+    /*@Get()
+    async getAll() : Promise<Movie[]> {
         return this.moviesService.getAll();
-    }
+    }*/
 
     /*@Get('search')
     search(@Query("year") searchingYear: string){

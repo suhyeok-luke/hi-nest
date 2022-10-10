@@ -1,7 +1,8 @@
 import { Injectable, NotFoundException, Inject } from '@nestjs/common';
+import { Model } from 'mongoose';
 import { CreateMovieDTO } from './dto/create-movie.dto';
 import { UpdateMovieDTO } from './dto/update-movie.dto';
-import { Movie } from './entities/movies.entity';
+import { Movie } from '../schemas/movies.schema';
 
 @Injectable()
 export class MoviesService {
@@ -9,11 +10,12 @@ export class MoviesService {
 
     constructor(
         @Inject('MOVIES_MODEL')
-        private movies: Movie[]
+        private moviesModel: Model<Movie>
     ) {}
 
-    getAll(): Movie[] {
-        return this.movies;
+    async getAll(): Promise<Movie[]> {
+        console.log();
+        return this.moviesModel.find().exec();
     }
 
     /*getOne(id: number): Movie {
