@@ -5,6 +5,17 @@ type Movie {
     genres: [String]
 }
 
+input CreateMovieInput {
+    id : Int
+    title: String
+    year: Int
+    genres: [String]
+}
+
 type Query {
     getAll : [Movie]
+}
+
+type Mutation {
+    addMovies(movie: CreateMovieInput): Movie
 }
